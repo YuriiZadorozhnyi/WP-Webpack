@@ -36,7 +36,7 @@ button i {
     background-color: white;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
     .product {
         width: 98%;
     }
