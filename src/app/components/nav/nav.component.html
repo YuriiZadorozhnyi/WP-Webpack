@@ -1,0 +1,41 @@
+<ul class="menu">
+
+    <li>
+      <a routerLink="/home" [routerLinkActive]="['active']">Categories</a>
+    </li>
+
+    <li>
+      <a routerLink="/products" (click)="prodToggle()" [routerLinkActive]="['active']" >Products</a>  
+      <div *ngIf="productStatusTogle">
+        <ul class="dropDownMenu">
+          <li *ngFor = "let category of categories">
+            <a [routerLink]="['/production', category.id]" [routerLinkActive]="['active']"> {{category.name | capitalize}} </a>
+          </li>
+        </ul>
+      </div>
+    </li>
+
+    <li>
+      <a routerLink="/basket" [routerLinkActive]="['active']">
+        Basket 
+       <i class="fa fa-shopping-basket fa-1x" aria-hidden="true" *ngIf="basket.getItems().length != 0"></i>
+      </a>
+    </li>
+
+    <li>
+      <a routerLink="/filter" (click)="filtToggle()" [routerLinkActive]="['active']">Filter</a> 
+      <div *ngIf="filterStatusTogle">
+        <form>
+          <label>
+            <p>Title</p>
+            <input type="text" name="title"        [(ngModel)]="filtering.title" />   
+          </label>
+          <label>
+            <p>Manufacturer</p>
+            <input type="text" name="manufacturer" [(ngModel)]="filtering.manufacturer" /> 
+          </label>
+        </form>
+      </div>
+    </li>
+    
+</ul>

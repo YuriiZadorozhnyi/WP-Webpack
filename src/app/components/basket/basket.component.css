@@ -1,0 +1,53 @@
+h2 {
+    width: 80%;
+    margin: auto;
+    padding: 30px;
+    text-align: center;
+    font-family: 'Baloo Bhaina', cursive;
+}
+
+.product, .sumUp {
+    width: 98%;
+    height: auto;
+    padding: 15px;
+    margin: 1%;
+    background-color: #eee;
+    border: 3px solid navy;
+    border-radius: 10px;
+    text-align: center;
+    vertical-align: center;
+    display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+	align-items: center;
+}
+
+.img {
+    width: 24%;
+}
+
+img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.info {
+    width: 50%;
+    padding: 0 10px;
+}
+
+.calculations {
+    width: 24%;
+}
+
+input {
+    width: 30%;
+}
+
+i {
+    color: red;
+    cursor: pointer;
+}

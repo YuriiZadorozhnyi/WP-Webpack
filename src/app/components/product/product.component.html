@@ -1,0 +1,16 @@
+<div class="product" *ngIf="product">
+
+    <h1>{{product.title | capitalize}}</h1>
+
+    <img [src]="product.imgurl">
+    <p class="productDescription">{{product.description | capitalize}}</p>
+    <p>{{product.manufacturer | uppercase}}</p>
+    <p class="productPrice">{{ product.price | currency}}</p>
+    
+    <button (click)='basket.addItem(product)'>
+        <i class="fa fa-shopping-basket fa-2x" aria-hidden="true"></i>
+    </button>
+
+</div>
+
+

@@ -1,0 +1,51 @@
+<h2 *ngIf="basket.getItems().length === 0">There is no any goods in basket ! Add it !!!</h2>
+
+
+<div class="product" *ngFor="let item of basket.getItems()" >
+
+    <div class="img">
+        <img [src]="item.product.imgurl">
+    </div>
+
+    <div class="info">
+        <h3>{{item.product.title | capitalize}} / {{item.product.manufacturer | uppercase}}</h3>
+        <p class="productDescription">{{item.product.description | capitalize}}</p>
+    </div>
+
+    <div class="calculations">
+        <p> Price: {{item.product.price | currency}} </p>
+        <label>
+            Quantity: 
+            <input type="number" min="0" [(ngModel)]="item.count" name="count" />  
+        </label>
+        <p> Total Price: {{item.product.price * item.count}}  </p>  
+        <p (click) = "basket.removeItem(item.product)" title="Remove item from the list">
+            <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+        </p>
+    </div>
+
+</div>
+
+
+<div class="sumUp" *ngIf="basket.getItems().length != 0">
+
+    <div class="img">
+        <i class="fa fa-shopping-basket fa-2x" aria-hidden="true"></i>
+    </div>
+
+    <div class="info">
+        <ul>
+            <li *ngFor="let item of basket.getItems()">{{item.product.title | capitalize}}</li>
+        </ul>
+    </div>
+
+    <div class="calculations">
+        <h3>
+            Total price:
+        </h3>
+        <p>
+            {{basket.totalSum()}}
+        </p>
+    </div>
+
+</div>

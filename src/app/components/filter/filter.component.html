@@ -1,0 +1,18 @@
+<div class="productsFilter">
+
+<input class="textInput" type="text" [(ngModel)]="manufacturer" placeholder="Manufacturer..." />
+
+Min: <input class="numberInput" type="number" min="100" step="10" [(ngModel)]="minPrice" placeholder="Min Price..." />
+Max: <input class="numberInput" type="number" min="300" step="10" [(ngModel)]="maxPrice" placeholder="Max Price..." />
+
+</div>
+
+<product-item  
+    *ngFor="let product of products | filterManufacturer:manufacturer | 
+                                      filterTitle:filtering.title | 
+                                      filterManufacturer:filtering.manufacturer | 
+                                      filterMinPrice:minPrice | 
+                                      filterMaxPrice: maxPrice" 
+    [product]="product" (addToCart)="addToBasket(product)" 
+>
+</product-item>

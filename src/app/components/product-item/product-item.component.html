@@ -1,0 +1,17 @@
+<div
+        class="product"
+        [routerLink]="['/product', product.id]"
+>
+
+    <img [src]="product.imgurl">
+    <div class="info">
+        <h3>{{product.title | capitalize}}</h3>
+        <p class="productDescription">{{product.description | capitalize}}</p>
+        <p class="productManufacturer">{{product.manufacturer | uppercase}}</p>
+        <p class="productPrice">{{ product.price | currency}}</p>
+        <button (click)='addToBasket($event)'> 
+            <i class="fa fa-shopping-basket fa-2x" aria-hidden="true"></i>
+        </button>
+    </div>
+    
+</div>

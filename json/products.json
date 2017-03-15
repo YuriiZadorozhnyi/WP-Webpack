@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "category" : 1,
+        "manufacturer" : "samsung",
+        "title" : "Samsung Galaxy S3",
+        "description" : 
+        "Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. ",
+        "imgurl" : "https://i5.walmartimages.com/asr/98d0cbd8-49ff-4921-9e3c-534e9b461420_1.84542d06c821c280613800a92a9bd024.jpeg",
+        "price" : 250,
+        "evailable" : true,
+        "store" : 2
+    },
+    {
+        "id": 2,
+        "category" : 1,
+        "manufacturer" : "xiaomi",
+        "title" : "redmi note 4",
+        "description" : 
+        "Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. ",
+        "imgurl" : "https://i5.walmartimages.com/dfw/4ff9c6c9-9356/k2-_c59a878c-3d51-4807-aabd-84b0410de921.v1.jpg",
+        "price" : 300,
+        "evailable" : true,
+        "store" : 3
+    },
+    {
+        "id": 3,
+        "category" : 1,
+        "manufacturer" : "meizu",
+        "title" : "Meizu M3",
+        "description" : 
+        "Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. ",
+        "imgurl" : "http://img.allo.ua/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/m/e/meizu_m3_16gb_black.jpg",
+        "price" : 350,
+        "evailable" : true,
+        "store" : 12
+    },
+    {
+        "id": 4,
+        "category" : 1,
+        "manufacturer" : "samsung",
+        "title" : "Samsung Galaxy S6",
+        "description" : 
+        "Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. ",
+        "imgurl" : "http://www.samsung.com/global/galaxy/galaxys6/galaxy-s6-edge/images/galaxy-s6-edge_gallery_front_black.png",
+        "price" : 400,
+        "evailable" : true, 
+        "store" : 7
+    },
+    {
+        "id": 5,
+        "category" : 2,
+        "manufacturer" : "lenovo",
+        "title" : "Lenovo Yoga Tablet",
+        "description" : 
+        "Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. ",
+        "imgurl" : "http://www.notebookcheck.net/fileadmin/_processed_/csm_Lenovo_Yoga_Tablet_2_Pro_13_A_Hero__f2f2f62b38.jpg",
+        "price" : 250,
+        "evailable" : true,
+        "store" : 2
+    },
+    {
+        "id": 6,
+        "category" : 2,
+        "manufacturer" : "samsung",
+        "title" : "Samsung MSX 4",
+        "description" : 
+        "Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. ",
+        "imgurl" : "https://images-na.ssl-images-amazon.com/images/I/81n-vugKcTL._SL1500_.jpg",
+        "price" : 300,
+        "evailable" : true,
+        "store" : 2
+    },
+    {
+        "id": 7,
+        "category" : 2,
+        "manufacturer" : "toshiba",
+        "title" : "Satelite 4",
+        "description" : 
+        "Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. ",
+        "imgurl" : "http://images.esellerpro.com/2660/I/113/352/Toshiba%20Satellite%20Click%20Mini%20-4.jpg",
+        "price" : 350,
+        "evailable" : true,
+        "store" : 50
+    },
+    {
+        "id": 8,
+        "category" : 2,
+        "manufacturer" : "samsung",
+        "title" : "Samsung Galaxy MS6",
+        "description" : 
+        "Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. ",
+        "imgurl" : "http://images.samsung.com/is/image/samsung/uk-galaxy-tab-4-10-1-t530-sm-t530nykabtu-000240638-dynamic2-black?$PD_GALLERY_JPG$",
+        "price" : 400,
+        "evailable" : true,
+        "store" : 9
+    }
+]
