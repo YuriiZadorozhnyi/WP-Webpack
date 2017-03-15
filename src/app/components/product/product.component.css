@@ -11,7 +11,7 @@ img {
     padding: 15px;
     margin: 3% 10%;
     background-color: #eee;
-    border: 3px solid navy;
+    border: 3px solid #84a88a;
     border-radius: 10px;
     text-align: center;
 }
@@ -36,7 +36,7 @@ button {
 }
 
 button i {
-    color: navy;
+    color: #84a88a;
 }
 
 @media (max-width: 600px) {

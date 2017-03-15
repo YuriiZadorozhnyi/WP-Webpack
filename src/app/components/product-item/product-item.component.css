@@ -1,11 +1,10 @@
 .product {
     width: 48%;
-    height: 350px;
     display: inline-block;
     padding: 15px;
     margin: 1%;
     background-color: white;
-    border: 3px solid navy;
+    border: 3px solid #84a88a;
     border-radius: 10px;
     text-align: center;
 }
@@ -18,6 +17,7 @@ img {
 
 .productDescription {
     width: 90%;
+    height: max-content;
     margin: auto;
 } 
 
@@ -32,19 +32,27 @@ button {
 }
 
 button i {
-    color: navy;
+    color: #84a88a;
     background-color: white;
+}
+
+@keyframes buy {
+    0% {color: #84a88a; transform: rotate(-10deg);}
+    33% {color: #67db9d; transform: rotate(-5deg);}
+    66% {color: #58f4b6; transform: rotate(+5deg);}
+    100% {color: #84a88a; transform: rotate(+10deg);}
+}
+
+button i:hover {
+    color: #84a88a;
+    animation-name: buy;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
 }
 
 @media (max-width: 650px) {
     .product {
         width: 98%;
-    }
-}
-
-@media (max-width: 330px) {
-    .product {
-        height: 370px;
     }
 }
 
