@@ -11,3 +11,12 @@ h3 {
     font-family: 'Baloo Bhaina', cursive;
     color: #479962;
 }
+
+@media (min-width: 800px) {
+    div {
+        width: 40%;
+        margin: 15px 5%;
+        display: inline-block;
+        text-align: center;
+    }
+}
